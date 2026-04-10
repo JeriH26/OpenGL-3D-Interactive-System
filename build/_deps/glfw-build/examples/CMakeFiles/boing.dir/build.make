@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation
+CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation/build
+CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build
 
 # Include any dependencies generated for this target.
 include _deps/glfw-build/examples/CMakeFiles/boing.dir/depend.make
@@ -74,35 +74,35 @@ _deps/glfw-build/examples/CMakeFiles/boing.dir/codegen:
 
 _deps/glfw-build/examples/boing.app/Contents/Resources/glfw.icns: _deps/glfw-src/examples/glfw.icns
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Copying OS X content _deps/glfw-build/examples/boing.app/Contents/Resources/glfw.icns"
-	$(CMAKE_COMMAND) -E copy /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/glfw.icns _deps/glfw-build/examples/boing.app/Contents/Resources/glfw.icns
+	$(CMAKE_COMMAND) -E copy /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/glfw.icns _deps/glfw-build/examples/boing.app/Contents/Resources/glfw.icns
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o: _deps/glfw-build/examples/CMakeFiles/boing.dir/flags.make
 _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o: _deps/glfw-src/examples/boing.c
 _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o: _deps/glfw-build/examples/CMakeFiles/boing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o -MF CMakeFiles/boing.dir/boing.c.o.d -o CMakeFiles/boing.dir/boing.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/boing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.o -MF CMakeFiles/boing.dir/boing.c.o.d -o CMakeFiles/boing.dir/boing.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/boing.c
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/boing.dir/boing.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/boing.c > CMakeFiles/boing.dir/boing.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/boing.c > CMakeFiles/boing.dir/boing.c.i
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/boing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boing.dir/boing.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/boing.c -o CMakeFiles/boing.dir/boing.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/boing.c -o CMakeFiles/boing.dir/boing.c.s
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: _deps/glfw-build/examples/CMakeFiles/boing.dir/flags.make
 _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: _deps/glfw-src/deps/glad_gl.c
 _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: _deps/glfw-build/examples/CMakeFiles/boing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o -MF CMakeFiles/boing.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/boing.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o -MF CMakeFiles/boing.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/boing.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/boing.dir/__/deps/glad_gl.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/boing.dir/__/deps/glad_gl.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/boing.dir/__/deps/glad_gl.c.i
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boing.dir/__/deps/glad_gl.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/boing.dir/__/deps/glad_gl.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/boing.dir/__/deps/glad_gl.c.s
 
 # Object files for target boing
 boing_OBJECTS = \
@@ -117,8 +117,8 @@ _deps/glfw-build/examples/boing.app/Contents/MacOS/boing: _deps/glfw-build/examp
 _deps/glfw-build/examples/boing.app/Contents/MacOS/boing: _deps/glfw-build/examples/CMakeFiles/boing.dir/build.make
 _deps/glfw-build/examples/boing.app/Contents/MacOS/boing: _deps/glfw-build/src/libglfw3.a
 _deps/glfw-build/examples/boing.app/Contents/MacOS/boing: _deps/glfw-build/examples/CMakeFiles/boing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable boing.app/Contents/MacOS/boing"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable boing.app/Contents/MacOS/boing"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/glfw-build/examples/CMakeFiles/boing.dir/build: _deps/glfw-build/examples/boing.app/Contents/MacOS/boing
@@ -126,10 +126,10 @@ _deps/glfw-build/examples/CMakeFiles/boing.dir/build: _deps/glfw-build/examples/
 .PHONY : _deps/glfw-build/examples/CMakeFiles/boing.dir/build
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/clean:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/boing.dir/cmake_clean.cmake
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/boing.dir/cmake_clean.cmake
 .PHONY : _deps/glfw-build/examples/CMakeFiles/boing.dir/clean
 
 _deps/glfw-build/examples/CMakeFiles/boing.dir/depend:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/Shader-Animation /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples /Users/huangjunyi/Documents/Github/Shader-Animation/build /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples/CMakeFiles/boing.dir/DependInfo.cmake "--color=$(COLOR)" boing
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples/CMakeFiles/boing.dir/DependInfo.cmake "--color=$(COLOR)" boing
 .PHONY : _deps/glfw-build/examples/CMakeFiles/boing.dir/depend
 

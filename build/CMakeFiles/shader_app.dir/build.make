@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation
+CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation/build
+CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/shader_app.dir/depend.make
@@ -73,88 +73,88 @@ CMakeFiles/shader_app.dir/codegen:
 .PHONY : CMakeFiles/shader_app.dir/codegen
 
 CMakeFiles/shader_app.dir/src/app_options.cpp.o: CMakeFiles/shader_app.dir/flags.make
-CMakeFiles/shader_app.dir/src/app_options.cpp.o: /Users/huangjunyi/Documents/Github/Shader-Animation/src/app_options.cpp
+CMakeFiles/shader_app.dir/src/app_options.cpp.o: /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/app_options.cpp
 CMakeFiles/shader_app.dir/src/app_options.cpp.o: CMakeFiles/shader_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shader_app.dir/src/app_options.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/app_options.cpp.o -MF CMakeFiles/shader_app.dir/src/app_options.cpp.o.d -o CMakeFiles/shader_app.dir/src/app_options.cpp.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/src/app_options.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shader_app.dir/src/app_options.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/app_options.cpp.o -MF CMakeFiles/shader_app.dir/src/app_options.cpp.o.d -o CMakeFiles/shader_app.dir/src/app_options.cpp.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/app_options.cpp
 
 CMakeFiles/shader_app.dir/src/app_options.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shader_app.dir/src/app_options.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/src/app_options.cpp > CMakeFiles/shader_app.dir/src/app_options.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/app_options.cpp > CMakeFiles/shader_app.dir/src/app_options.cpp.i
 
 CMakeFiles/shader_app.dir/src/app_options.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shader_app.dir/src/app_options.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/src/app_options.cpp -o CMakeFiles/shader_app.dir/src/app_options.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/app_options.cpp -o CMakeFiles/shader_app.dir/src/app_options.cpp.s
 
 CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o: CMakeFiles/shader_app.dir/flags.make
-CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o: /Users/huangjunyi/Documents/Github/Shader-Animation/src/frame_profiler.cpp
+CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o: /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/frame_profiler.cpp
 CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o: CMakeFiles/shader_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o -MF CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o.d -o CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/src/frame_profiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o -MF CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o.d -o CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/frame_profiler.cpp
 
 CMakeFiles/shader_app.dir/src/frame_profiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shader_app.dir/src/frame_profiler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/src/frame_profiler.cpp > CMakeFiles/shader_app.dir/src/frame_profiler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/frame_profiler.cpp > CMakeFiles/shader_app.dir/src/frame_profiler.cpp.i
 
 CMakeFiles/shader_app.dir/src/frame_profiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shader_app.dir/src/frame_profiler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/src/frame_profiler.cpp -o CMakeFiles/shader_app.dir/src/frame_profiler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/frame_profiler.cpp -o CMakeFiles/shader_app.dir/src/frame_profiler.cpp.s
 
 CMakeFiles/shader_app.dir/src/main.cpp.o: CMakeFiles/shader_app.dir/flags.make
-CMakeFiles/shader_app.dir/src/main.cpp.o: /Users/huangjunyi/Documents/Github/Shader-Animation/src/main.cpp
+CMakeFiles/shader_app.dir/src/main.cpp.o: /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/main.cpp
 CMakeFiles/shader_app.dir/src/main.cpp.o: CMakeFiles/shader_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shader_app.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/main.cpp.o -MF CMakeFiles/shader_app.dir/src/main.cpp.o.d -o CMakeFiles/shader_app.dir/src/main.cpp.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shader_app.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/main.cpp.o -MF CMakeFiles/shader_app.dir/src/main.cpp.o.d -o CMakeFiles/shader_app.dir/src/main.cpp.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/main.cpp
 
 CMakeFiles/shader_app.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shader_app.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/src/main.cpp > CMakeFiles/shader_app.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/main.cpp > CMakeFiles/shader_app.dir/src/main.cpp.i
 
 CMakeFiles/shader_app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shader_app.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/src/main.cpp -o CMakeFiles/shader_app.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/main.cpp -o CMakeFiles/shader_app.dir/src/main.cpp.s
 
 CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o: CMakeFiles/shader_app.dir/flags.make
-CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o: /Users/huangjunyi/Documents/Github/Shader-Animation/src/performance_profiler.cpp
+CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o: /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/performance_profiler.cpp
 CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o: CMakeFiles/shader_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o -MF CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o.d -o CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/src/performance_profiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o -MF CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o.d -o CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/performance_profiler.cpp
 
 CMakeFiles/shader_app.dir/src/performance_profiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shader_app.dir/src/performance_profiler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/src/performance_profiler.cpp > CMakeFiles/shader_app.dir/src/performance_profiler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/performance_profiler.cpp > CMakeFiles/shader_app.dir/src/performance_profiler.cpp.i
 
 CMakeFiles/shader_app.dir/src/performance_profiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shader_app.dir/src/performance_profiler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/src/performance_profiler.cpp -o CMakeFiles/shader_app.dir/src/performance_profiler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/performance_profiler.cpp -o CMakeFiles/shader_app.dir/src/performance_profiler.cpp.s
 
 CMakeFiles/shader_app.dir/src/shader.cpp.o: CMakeFiles/shader_app.dir/flags.make
-CMakeFiles/shader_app.dir/src/shader.cpp.o: /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.cpp
+CMakeFiles/shader_app.dir/src/shader.cpp.o: /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.cpp
 CMakeFiles/shader_app.dir/src/shader.cpp.o: CMakeFiles/shader_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/shader_app.dir/src/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/shader.cpp.o -MF CMakeFiles/shader_app.dir/src/shader.cpp.o.d -o CMakeFiles/shader_app.dir/src/shader.cpp.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/shader_app.dir/src/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/shader.cpp.o -MF CMakeFiles/shader_app.dir/src/shader.cpp.o.d -o CMakeFiles/shader_app.dir/src/shader.cpp.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.cpp
 
 CMakeFiles/shader_app.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shader_app.dir/src/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.cpp > CMakeFiles/shader_app.dir/src/shader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.cpp > CMakeFiles/shader_app.dir/src/shader.cpp.i
 
 CMakeFiles/shader_app.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shader_app.dir/src/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.cpp -o CMakeFiles/shader_app.dir/src/shader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.cpp -o CMakeFiles/shader_app.dir/src/shader.cpp.s
 
 CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o: CMakeFiles/shader_app.dir/flags.make
-CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o: /Users/huangjunyi/Documents/Github/Shader-Animation/src/mouse_controller.cpp
+CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o: /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/mouse_controller.cpp
 CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o: CMakeFiles/shader_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o -MF CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o.d -o CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/src/mouse_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o -MF CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o.d -o CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/mouse_controller.cpp
 
 CMakeFiles/shader_app.dir/src/mouse_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shader_app.dir/src/mouse_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/src/mouse_controller.cpp > CMakeFiles/shader_app.dir/src/mouse_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/mouse_controller.cpp > CMakeFiles/shader_app.dir/src/mouse_controller.cpp.i
 
 CMakeFiles/shader_app.dir/src/mouse_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shader_app.dir/src/mouse_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/src/mouse_controller.cpp -o CMakeFiles/shader_app.dir/src/mouse_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/mouse_controller.cpp -o CMakeFiles/shader_app.dir/src/mouse_controller.cpp.s
 
 # Object files for target shader_app
 shader_app_OBJECTS = \
@@ -177,7 +177,7 @@ shader_app: CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o
 shader_app: CMakeFiles/shader_app.dir/build.make
 shader_app: _deps/glfw-build/src/libglfw3.a
 shader_app: CMakeFiles/shader_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable shader_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable shader_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shader_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/shader_app.dir/clean:
 .PHONY : CMakeFiles/shader_app.dir/clean
 
 CMakeFiles/shader_app.dir/depend:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/Shader-Animation /Users/huangjunyi/Documents/Github/Shader-Animation /Users/huangjunyi/Documents/Github/Shader-Animation/build /Users/huangjunyi/Documents/Github/Shader-Animation/build /Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles/shader_app.dir/DependInfo.cmake "--color=$(COLOR)" shader_app
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles/shader_app.dir/DependInfo.cmake "--color=$(COLOR)" shader_app
 .PHONY : CMakeFiles/shader_app.dir/depend
 

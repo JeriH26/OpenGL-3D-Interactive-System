@@ -4,9 +4,9 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps -I/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/include
+C_INCLUDES = -I/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps -I/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/include
 
-C_FLAGSarm64 = -std=gnu99 -arch arm64
+C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu99 -arch arm64
 
-C_FLAGS = -std=gnu99 -arch arm64
+C_FLAGS = -O3 -DNDEBUG -std=gnu99 -arch arm64
 

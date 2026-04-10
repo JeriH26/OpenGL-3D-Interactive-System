@@ -1,11 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/huangjunyi/Documents/Github/Shader-Animation/build/cmake_install.cmake",
-		"/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/cmake_install.cmake",
-		"/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/src/cmake_install.cmake",
-		"/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples/cmake_install.cmake",
-		"/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests/cmake_install.cmake"
+		"/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/cmake_install.cmake",
+		"/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/cmake_install.cmake",
+		"/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/src/cmake_install.cmake",
+		"/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples/cmake_install.cmake",
+		"/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

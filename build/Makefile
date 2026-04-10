@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation
+CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation/build
+CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles /Users/huangjunyi/Documents/Github/Shader-Animation/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -196,6 +196,19 @@ mouse_controller_test: cmake_check_build_system
 mouse_controller_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_controller_test.dir/build.make CMakeFiles/mouse_controller_test.dir/build
 .PHONY : mouse_controller_test/fast
+
+#=============================================================================
+# Target rules for targets named xr_viewer
+
+# Build rule for target.
+xr_viewer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xr_viewer
+.PHONY : xr_viewer
+
+# fast build rule for target.
+xr_viewer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/build
+.PHONY : xr_viewer/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -619,6 +632,7 @@ src/app_options.o: src/app_options.cpp.o
 # target to build an object file
 src/app_options.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/app_options.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/app_options.cpp.o
 .PHONY : src/app_options.cpp.o
 
 src/app_options.i: src/app_options.cpp.i
@@ -627,6 +641,7 @@ src/app_options.i: src/app_options.cpp.i
 # target to preprocess a source file
 src/app_options.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/app_options.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/app_options.cpp.i
 .PHONY : src/app_options.cpp.i
 
 src/app_options.s: src/app_options.cpp.s
@@ -635,6 +650,7 @@ src/app_options.s: src/app_options.cpp.s
 # target to generate assembly for a file
 src/app_options.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/app_options.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/app_options.cpp.s
 .PHONY : src/app_options.cpp.s
 
 src/frame_profiler.o: src/frame_profiler.cpp.o
@@ -643,6 +659,7 @@ src/frame_profiler.o: src/frame_profiler.cpp.o
 # target to build an object file
 src/frame_profiler.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/frame_profiler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/frame_profiler.cpp.o
 .PHONY : src/frame_profiler.cpp.o
 
 src/frame_profiler.i: src/frame_profiler.cpp.i
@@ -651,6 +668,7 @@ src/frame_profiler.i: src/frame_profiler.cpp.i
 # target to preprocess a source file
 src/frame_profiler.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/frame_profiler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/frame_profiler.cpp.i
 .PHONY : src/frame_profiler.cpp.i
 
 src/frame_profiler.s: src/frame_profiler.cpp.s
@@ -659,6 +677,7 @@ src/frame_profiler.s: src/frame_profiler.cpp.s
 # target to generate assembly for a file
 src/frame_profiler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/frame_profiler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/frame_profiler.cpp.s
 .PHONY : src/frame_profiler.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -692,6 +711,7 @@ src/mouse_controller.o: src/mouse_controller.cpp.o
 src/mouse_controller.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/mouse_controller.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_controller_test.dir/build.make CMakeFiles/mouse_controller_test.dir/src/mouse_controller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/mouse_controller.cpp.o
 .PHONY : src/mouse_controller.cpp.o
 
 src/mouse_controller.i: src/mouse_controller.cpp.i
@@ -701,6 +721,7 @@ src/mouse_controller.i: src/mouse_controller.cpp.i
 src/mouse_controller.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/mouse_controller.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_controller_test.dir/build.make CMakeFiles/mouse_controller_test.dir/src/mouse_controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/mouse_controller.cpp.i
 .PHONY : src/mouse_controller.cpp.i
 
 src/mouse_controller.s: src/mouse_controller.cpp.s
@@ -710,6 +731,7 @@ src/mouse_controller.s: src/mouse_controller.cpp.s
 src/mouse_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/mouse_controller.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_controller_test.dir/build.make CMakeFiles/mouse_controller_test.dir/src/mouse_controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/mouse_controller.cpp.s
 .PHONY : src/mouse_controller.cpp.s
 
 src/mouse_controller_test.o: src/mouse_controller_test.cpp.o
@@ -742,6 +764,7 @@ src/performance_profiler.o: src/performance_profiler.cpp.o
 # target to build an object file
 src/performance_profiler.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/performance_profiler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/performance_profiler.cpp.o
 .PHONY : src/performance_profiler.cpp.o
 
 src/performance_profiler.i: src/performance_profiler.cpp.i
@@ -750,6 +773,7 @@ src/performance_profiler.i: src/performance_profiler.cpp.i
 # target to preprocess a source file
 src/performance_profiler.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/performance_profiler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/performance_profiler.cpp.i
 .PHONY : src/performance_profiler.cpp.i
 
 src/performance_profiler.s: src/performance_profiler.cpp.s
@@ -758,6 +782,7 @@ src/performance_profiler.s: src/performance_profiler.cpp.s
 # target to generate assembly for a file
 src/performance_profiler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/performance_profiler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/performance_profiler.cpp.s
 .PHONY : src/performance_profiler.cpp.s
 
 src/shader.o: src/shader.cpp.o
@@ -766,6 +791,7 @@ src/shader.o: src/shader.cpp.o
 # target to build an object file
 src/shader.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/shader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/shader.cpp.o
 .PHONY : src/shader.cpp.o
 
 src/shader.i: src/shader.cpp.i
@@ -774,6 +800,7 @@ src/shader.i: src/shader.cpp.i
 # target to preprocess a source file
 src/shader.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/shader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/shader.cpp.i
 .PHONY : src/shader.cpp.i
 
 src/shader.s: src/shader.cpp.s
@@ -782,7 +809,32 @@ src/shader.s: src/shader.cpp.s
 # target to generate assembly for a file
 src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shader_app.dir/build.make CMakeFiles/shader_app.dir/src/shader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
+
+src/xr_viewer.o: src/xr_viewer.cpp.o
+.PHONY : src/xr_viewer.o
+
+# target to build an object file
+src/xr_viewer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/xr_viewer.cpp.o
+.PHONY : src/xr_viewer.cpp.o
+
+src/xr_viewer.i: src/xr_viewer.cpp.i
+.PHONY : src/xr_viewer.i
+
+# target to preprocess a source file
+src/xr_viewer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/xr_viewer.cpp.i
+.PHONY : src/xr_viewer.cpp.i
+
+src/xr_viewer.s: src/xr_viewer.cpp.s
+.PHONY : src/xr_viewer.s
+
+# target to generate assembly for a file
+src/xr_viewer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xr_viewer.dir/build.make CMakeFiles/xr_viewer.dir/src/xr_viewer.cpp.s
+.PHONY : src/xr_viewer.cpp.s
 
 # Help Target
 help:
@@ -831,6 +883,7 @@ help:
 	@echo "... triangle-vulkan"
 	@echo "... wave"
 	@echo "... windows"
+	@echo "... xr_viewer"
 	@echo "... src/app_options.o"
 	@echo "... src/app_options.i"
 	@echo "... src/app_options.s"
@@ -852,6 +905,9 @@ help:
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
+	@echo "... src/xr_viewer.o"
+	@echo "... src/xr_viewer.i"
+	@echo "... src/xr_viewer.s"
 .PHONY : help
 
 

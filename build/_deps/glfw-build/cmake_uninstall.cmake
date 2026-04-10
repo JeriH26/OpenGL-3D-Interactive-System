@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/install_manifest.txt\"")
+if (NOT EXISTS "/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/install_manifest.txt" files)
+file(READ "/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

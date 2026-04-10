@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation
+CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation/build
+CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build
 
 # Include any dependencies generated for this target.
 include _deps/glfw-build/tests/CMakeFiles/threads.dir/depend.make
@@ -75,44 +75,44 @@ _deps/glfw-build/tests/CMakeFiles/threads.dir/codegen:
 _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o: _deps/glfw-build/tests/CMakeFiles/threads.dir/flags.make
 _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o: _deps/glfw-src/tests/threads.c
 _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o: _deps/glfw-build/tests/CMakeFiles/threads.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o -MF CMakeFiles/threads.dir/threads.c.o.d -o CMakeFiles/threads.dir/threads.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests/threads.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.o -MF CMakeFiles/threads.dir/threads.c.o.d -o CMakeFiles/threads.dir/threads.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests/threads.c
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/threads.dir/threads.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests/threads.c > CMakeFiles/threads.dir/threads.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests/threads.c > CMakeFiles/threads.dir/threads.c.i
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/threads.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/threads.dir/threads.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests/threads.c -o CMakeFiles/threads.dir/threads.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests/threads.c -o CMakeFiles/threads.dir/threads.c.s
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: _deps/glfw-build/tests/CMakeFiles/threads.dir/flags.make
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: _deps/glfw-src/deps/tinycthread.c
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: _deps/glfw-build/tests/CMakeFiles/threads.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o -MF CMakeFiles/threads.dir/__/deps/tinycthread.c.o.d -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/tinycthread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o -MF CMakeFiles/threads.dir/__/deps/tinycthread.c.o.d -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/tinycthread.c
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/threads.dir/__/deps/tinycthread.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/tinycthread.c > CMakeFiles/threads.dir/__/deps/tinycthread.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/tinycthread.c > CMakeFiles/threads.dir/__/deps/tinycthread.c.i
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/threads.dir/__/deps/tinycthread.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/tinycthread.c -o CMakeFiles/threads.dir/__/deps/tinycthread.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/tinycthread.c -o CMakeFiles/threads.dir/__/deps/tinycthread.c.s
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o: _deps/glfw-build/tests/CMakeFiles/threads.dir/flags.make
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o: _deps/glfw-src/deps/glad_gl.c
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o: _deps/glfw-build/tests/CMakeFiles/threads.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o -MF CMakeFiles/threads.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/threads.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o -MF CMakeFiles/threads.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/threads.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/threads.dir/__/deps/glad_gl.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/threads.dir/__/deps/glad_gl.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/threads.dir/__/deps/glad_gl.c.i
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/threads.dir/__/deps/glad_gl.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/threads.dir/__/deps/glad_gl.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/threads.dir/__/deps/glad_gl.c.s
 
 # Object files for target threads
 threads_OBJECTS = \
@@ -129,18 +129,18 @@ _deps/glfw-build/tests/threads.app/Contents/MacOS/threads: _deps/glfw-build/test
 _deps/glfw-build/tests/threads.app/Contents/MacOS/threads: _deps/glfw-build/tests/CMakeFiles/threads.dir/build.make
 _deps/glfw-build/tests/threads.app/Contents/MacOS/threads: _deps/glfw-build/src/libglfw3.a
 _deps/glfw-build/tests/threads.app/Contents/MacOS/threads: _deps/glfw-build/tests/CMakeFiles/threads.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable threads.app/Contents/MacOS/threads"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable threads.app/Contents/MacOS/threads"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/glfw-build/tests/CMakeFiles/threads.dir/build: _deps/glfw-build/tests/threads.app/Contents/MacOS/threads
 .PHONY : _deps/glfw-build/tests/CMakeFiles/threads.dir/build
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/clean:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/threads.dir/cmake_clean.cmake
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/threads.dir/cmake_clean.cmake
 .PHONY : _deps/glfw-build/tests/CMakeFiles/threads.dir/clean
 
 _deps/glfw-build/tests/CMakeFiles/threads.dir/depend:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/Shader-Animation /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests /Users/huangjunyi/Documents/Github/Shader-Animation/build /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests/CMakeFiles/threads.dir/DependInfo.cmake "--color=$(COLOR)" threads
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests/CMakeFiles/threads.dir/DependInfo.cmake "--color=$(COLOR)" threads
 .PHONY : _deps/glfw-build/tests/CMakeFiles/threads.dir/depend
 

@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation
+CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation/build
+CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build
 
 # Include any dependencies generated for this target.
 include _deps/glfw-build/examples/CMakeFiles/sharing.dir/depend.make
@@ -74,35 +74,35 @@ _deps/glfw-build/examples/CMakeFiles/sharing.dir/codegen:
 
 _deps/glfw-build/examples/sharing.app/Contents/Resources/glfw.icns: _deps/glfw-src/examples/glfw.icns
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Copying OS X content _deps/glfw-build/examples/sharing.app/Contents/Resources/glfw.icns"
-	$(CMAKE_COMMAND) -E copy /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/glfw.icns _deps/glfw-build/examples/sharing.app/Contents/Resources/glfw.icns
+	$(CMAKE_COMMAND) -E copy /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/glfw.icns _deps/glfw-build/examples/sharing.app/Contents/Resources/glfw.icns
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o: _deps/glfw-build/examples/CMakeFiles/sharing.dir/flags.make
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o: _deps/glfw-src/examples/sharing.c
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o: _deps/glfw-build/examples/CMakeFiles/sharing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o -MF CMakeFiles/sharing.dir/sharing.c.o.d -o CMakeFiles/sharing.dir/sharing.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/sharing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.o -MF CMakeFiles/sharing.dir/sharing.c.o.d -o CMakeFiles/sharing.dir/sharing.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/sharing.c
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sharing.dir/sharing.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/sharing.c > CMakeFiles/sharing.dir/sharing.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/sharing.c > CMakeFiles/sharing.dir/sharing.c.i
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/sharing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sharing.dir/sharing.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples/sharing.c -o CMakeFiles/sharing.dir/sharing.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples/sharing.c -o CMakeFiles/sharing.dir/sharing.c.s
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o: _deps/glfw-build/examples/CMakeFiles/sharing.dir/flags.make
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o: _deps/glfw-src/deps/glad_gl.c
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o: _deps/glfw-build/examples/CMakeFiles/sharing.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -MF CMakeFiles/sharing.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -MF CMakeFiles/sharing.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sharing.dir/__/deps/glad_gl.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/sharing.dir/__/deps/glad_gl.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/sharing.dir/__/deps/glad_gl.c.i
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sharing.dir/__/deps/glad_gl.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.s
 
 # Object files for target sharing
 sharing_OBJECTS = \
@@ -117,8 +117,8 @@ _deps/glfw-build/examples/sharing.app/Contents/MacOS/sharing: _deps/glfw-build/e
 _deps/glfw-build/examples/sharing.app/Contents/MacOS/sharing: _deps/glfw-build/examples/CMakeFiles/sharing.dir/build.make
 _deps/glfw-build/examples/sharing.app/Contents/MacOS/sharing: _deps/glfw-build/src/libglfw3.a
 _deps/glfw-build/examples/sharing.app/Contents/MacOS/sharing: _deps/glfw-build/examples/CMakeFiles/sharing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sharing.app/Contents/MacOS/sharing"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sharing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sharing.app/Contents/MacOS/sharing"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sharing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/build: _deps/glfw-build/examples/sharing.app/Contents/MacOS/sharing
@@ -126,10 +126,10 @@ _deps/glfw-build/examples/CMakeFiles/sharing.dir/build: _deps/glfw-build/example
 .PHONY : _deps/glfw-build/examples/CMakeFiles/sharing.dir/build
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/clean:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/sharing.dir/cmake_clean.cmake
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/sharing.dir/cmake_clean.cmake
 .PHONY : _deps/glfw-build/examples/CMakeFiles/sharing.dir/clean
 
 _deps/glfw-build/examples/CMakeFiles/sharing.dir/depend:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/Shader-Animation /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/examples /Users/huangjunyi/Documents/Github/Shader-Animation/build /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/examples/CMakeFiles/sharing.dir/DependInfo.cmake "--color=$(COLOR)" sharing
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/examples /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/examples/CMakeFiles/sharing.dir/DependInfo.cmake "--color=$(COLOR)" sharing
 .PHONY : _deps/glfw-build/examples/CMakeFiles/sharing.dir/depend
 

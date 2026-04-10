@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation
+CMAKE_SOURCE_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/Shader-Animation/build
+CMAKE_BINARY_DIR = /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build
 
 # Include any dependencies generated for this target.
 include _deps/glfw-build/tests/CMakeFiles/gamma.dir/depend.make
@@ -75,30 +75,30 @@ _deps/glfw-build/tests/CMakeFiles/gamma.dir/codegen:
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o: _deps/glfw-build/tests/CMakeFiles/gamma.dir/flags.make
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o: _deps/glfw-src/tests/gamma.c
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o: _deps/glfw-build/tests/CMakeFiles/gamma.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o -MF CMakeFiles/gamma.dir/gamma.c.o.d -o CMakeFiles/gamma.dir/gamma.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests/gamma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.o -MF CMakeFiles/gamma.dir/gamma.c.o.d -o CMakeFiles/gamma.dir/gamma.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests/gamma.c
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gamma.dir/gamma.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests/gamma.c > CMakeFiles/gamma.dir/gamma.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests/gamma.c > CMakeFiles/gamma.dir/gamma.c.i
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/gamma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gamma.dir/gamma.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests/gamma.c -o CMakeFiles/gamma.dir/gamma.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests/gamma.c -o CMakeFiles/gamma.dir/gamma.c.s
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o: _deps/glfw-build/tests/CMakeFiles/gamma.dir/flags.make
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o: _deps/glfw-src/deps/glad_gl.c
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o: _deps/glfw-build/tests/CMakeFiles/gamma.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -MF CMakeFiles/gamma.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -MF CMakeFiles/gamma.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -c /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gamma.dir/__/deps/glad_gl.c.i"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/gamma.dir/__/deps/glad_gl.c.i
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c > CMakeFiles/gamma.dir/__/deps/glad_gl.c.i
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gamma.dir/__/deps/glad_gl.c.s"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.s
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/deps/glad_gl.c -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.s
 
 # Object files for target gamma
 gamma_OBJECTS = \
@@ -113,18 +113,18 @@ _deps/glfw-build/tests/gamma.app/Contents/MacOS/gamma: _deps/glfw-build/tests/CM
 _deps/glfw-build/tests/gamma.app/Contents/MacOS/gamma: _deps/glfw-build/tests/CMakeFiles/gamma.dir/build.make
 _deps/glfw-build/tests/gamma.app/Contents/MacOS/gamma: _deps/glfw-build/src/libglfw3.a
 _deps/glfw-build/tests/gamma.app/Contents/MacOS/gamma: _deps/glfw-build/tests/CMakeFiles/gamma.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/Shader-Animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable gamma.app/Contents/MacOS/gamma"
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gamma.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable gamma.app/Contents/MacOS/gamma"
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gamma.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/build: _deps/glfw-build/tests/gamma.app/Contents/MacOS/gamma
 .PHONY : _deps/glfw-build/tests/CMakeFiles/gamma.dir/build
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/clean:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/gamma.dir/cmake_clean.cmake
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/gamma.dir/cmake_clean.cmake
 .PHONY : _deps/glfw-build/tests/CMakeFiles/gamma.dir/clean
 
 _deps/glfw-build/tests/CMakeFiles/gamma.dir/depend:
-	cd /Users/huangjunyi/Documents/Github/Shader-Animation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/Shader-Animation /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/tests /Users/huangjunyi/Documents/Github/Shader-Animation/build /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-build/tests/CMakeFiles/gamma.dir/DependInfo.cmake "--color=$(COLOR)" gamma
+	cd /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/tests /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-build/tests/CMakeFiles/gamma.dir/DependInfo.cmake "--color=$(COLOR)" gamma
 .PHONY : _deps/glfw-build/tests/CMakeFiles/gamma.dir/depend
 

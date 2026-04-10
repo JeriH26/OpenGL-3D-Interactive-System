@@ -33,33 +33,6 @@ float fbm(vec2 p) {
     return v;
 }
 
-float softParticles(vec2 p, float t, float breathe) {
-    float acc = 0.0;
-    for (int i = 0; i < 24; ++i) {
-        float fi = float(i);
-        float r1 = hash12(vec2(fi, 11.7));
-        float r2 = hash12(vec2(fi, 41.3));
-        float r3 = hash12(vec2(fi, 93.9));
-
-        float angle = 6.2831853 * r1 + t * (0.12 + 0.06 * r2);
-        vec2 dir = vec2(cos(angle), sin(angle));
-
-        float radialBand = mix(0.08, 0.42, r2);
-        vec2 pos = dir * radialBand * mix(0.9, 1.15, breathe);
-
-        float size = mix(0.020, 0.008, r3);
-        float d = length(p - pos);
-        float core = exp(-d * d / (size * size));
-
-        float twinkle = 0.5 + 0.5 * sin(t * (2.8 + 2.5 * r3) + fi * 1.7);
-        twinkle = pow(twinkle, 4.5);
-
-        acc += core * twinkle;
-    }
-
-    return acc * 0.030;
-}
-
 void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 uv = fragCoord.xy / iResolution.xy;
     vec2 p = (fragCoord.xy - 0.5 * iResolution.xy) / iResolution.y;
@@ -93,29 +66,39 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     float zoom01 = clamp((iDistance - 1.2) / (8.0 - 1.2), 0.0, 1.0);
     float sizeScale = mix(1.55, 0.55, zoom01);
     float blobRadius = 0.46 * sizeScale;
-    float blobMask = smoothstep(blobRadius + 0.11, blobRadius - 0.11, rq + edgeWarp);
+    float blobMask = smoothstep(blobRadius + 0.07, blobRadius - 0.07, rq + edgeWarp);
 
     // Cloud texture inside blob.
     vec2 cloudUv = q * 1.8 + vec2(t * 0.02, -t * 0.01);
     float c1 = fbm(cloudUv * 2.6);
     float c2 = fbm(cloudUv * 5.0 + 7.1);
     float cloudTex = mix(c1, c2, 0.45);
-    float cloudMask = smoothstep(0.42, 0.78, cloudTex);
+    float cloudMask = smoothstep(0.46, 0.70, cloudTex);
 
     vec3 cloudCol = vec3(0.82, 0.88, 0.94);
-    vec3 blobCol = mix(skyColor, cloudCol, cloudMask * 0.72);
+    vec3 blobCol = mix(skyColor, cloudCol, cloudMask * 0.92);
 
     // Gentle fog edge aligned with warped boundary to avoid seam/halo mismatch.
     float warpedR = rq + edgeWarp;
     float fogEdge = smoothstep(blobRadius + 0.28, blobRadius - 0.06, warpedR);
-    blobCol = mix(blobCol, vec3(0.72, 0.79, 0.88), fogEdge * 0.10);
+    blobCol = mix(blobCol, vec3(0.72, 0.79, 0.88), fogEdge * 0.06);
 
-    float sparkle = softParticles(q, t, 0.5);
-    blobCol += sparkle * vec3(0.75, 0.82, 0.90) * blobMask * 0.07;
+    // Sun reflection: sun-facing half of cloud is warmer and brighter.
+    vec2 sunDir = normalize(vec2(0.55, 0.70));
+    vec3 sunColor = vec3(1.00, 0.93, 0.68);
+    float sunFacing = dot(q / max(blobRadius, 0.001), sunDir); // -1..1, sun side = positive
+    float sunGlow = smoothstep(-0.1, 0.9, sunFacing) * cloudMask;
+    blobCol += sunColor * sunGlow * 0.14;
 
     // Compose with softened edge alpha to avoid double-darkening near boundary.
     float edgeAlpha = smoothstep(0.06, 0.98, blobMask);
     col = mix(col, blobCol, edgeAlpha);
+
+    // Silver lining: subtle sun-facing rim glow at the cloud boundary.
+    float edgePct = smoothstep(blobRadius - 0.06, blobRadius + 0.06, warpedR);
+    float silverRim = edgePct * (1.0 - edgePct) * 4.0;
+    silverRim *= pow(max(dot(normalize(q + vec2(1e-4)), sunDir), 0.0), 1.5);
+    col += sunColor * silverRim * 0.18;
 
     float vignette = smoothstep(1.25, 0.20, r);
     col *= 0.90 + 0.10 * vignette;
