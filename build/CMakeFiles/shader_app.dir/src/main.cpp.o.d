@@ -1,5 +1,5 @@
 CMakeFiles/shader_app.dir/src/main.cpp.o: \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/main.cpp \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gltypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
@@ -31,7 +31,7 @@ CMakeFiles/shader_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/build/_deps/glfw-src/include/GLFW/glfw3.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/build/_deps/glfw-src/include/GLFW/glfw3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_header_macro.h \
@@ -43,7 +43,7 @@ CMakeFiles/shader_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_nullptr_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_offsetof.h \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -816,9 +816,9 @@ CMakeFiles/shader_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/byteswap.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/app_options.h \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/frame_profiler.h \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/performance_profiler.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/app_options.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/frame_profiler.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/performance_profiler.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
@@ -984,5 +984,5 @@ CMakeFiles/shader_app.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/mouse_controller.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/mouse_controller.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

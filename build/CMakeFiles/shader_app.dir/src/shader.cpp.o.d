@@ -1,6 +1,6 @@
 CMakeFiles/shader_app.dir/src/shader.cpp.o: \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.cpp \
-  /Users/huangjunyi/Documents/Github/Shader-Animation/src/shader.h \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.cpp \
+  /Users/huangjunyi/Documents/Github/OpenGL-3D-Interactive-System/src/shader.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \

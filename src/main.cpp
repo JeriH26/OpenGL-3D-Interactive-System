@@ -18,6 +18,36 @@ static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 
 // Global mouse controller
 static MouseController g_mouseController;
+static int g_noiseMode = 0;
+
+static bool handleNoiseModeClick(GLFWwindow* window, double xpos, double ypos) {
+    int ww = 0, wh = 0;
+    glfwGetWindowSize(window, &ww, &wh);
+    if (ww <= 0 || wh <= 0) return false;
+
+    // Match shader overlay geometry: top-left buttons in normalized screen space.
+    const float panelX = 0.018f;
+    const float panelY = 0.926f;
+    const float bw = 0.070f;
+    const float bh = 0.052f;
+    const float gap = 0.010f;
+
+    float x = static_cast<float>(xpos) / static_cast<float>(ww);
+    float y = 1.0f - static_cast<float>(ypos) / static_cast<float>(wh);
+
+    for (int i = 0; i < 3; ++i) {
+        float bx0 = panelX + i * (bw + gap);
+        float by0 = panelY;
+        float bx1 = bx0 + bw;
+        float by1 = by0 + bh;
+        if (x >= bx0 && x <= bx1 && y >= by0 && y <= by1) {
+            g_noiseMode = i;
+            std::cout << "Noise mode set to: " << g_noiseMode << std::endl;
+            return true;
+        }
+    }
+    return false;
+}
 
 static void cursor_pos_callback(GLFWwindow* window, double xpos, double ypos) {
     (void)window;
@@ -29,6 +59,12 @@ static void mouse_button_callback(GLFWwindow* window, int button, int action, in
     (void)mods;
     if (button == GLFW_MOUSE_BUTTON_LEFT) {
         if (action == GLFW_PRESS) {
+            double xpos = 0.0, ypos = 0.0;
+            glfwGetCursorPos(window, &xpos, &ypos);
+            if (handleNoiseModeClick(window, xpos, ypos)) {
+                return;
+            }
+
             g_mouseController.onMouseButton(true);
             int ww = 0, wh = 0;
             int w = 0, h = 0;
@@ -129,11 +165,13 @@ void main(){ vUV = aPos * 0.5 + 0.5; gl_Position = vec4(aPos, 0.0, 1.0); }
         GLint orbitLoc = glGetUniformLocation(program, "iOrbit");
         GLint lightToggleLoc = glGetUniformLocation(program, "iLightOn");
         GLint distanceLoc = glGetUniformLocation(program, "iDistance");
+        GLint noiseModeLoc = glGetUniformLocation(program, "iNoiseMode");
         if (resLoc >= 0) glUniform3f(resLoc, (float)w, (float)h, 1.0f);
         if (timeLoc >= 0) glUniform1f(timeLoc, (float)glfwGetTime());
         if (orbitLoc >= 0) glUniform2f(orbitLoc, g_mouseController.getYaw(), g_mouseController.getPitch());
         if (lightToggleLoc >= 0) glUniform1f(lightToggleLoc, g_mouseController.isLightEnabled() ? 1.0f : 0.0f);
         if (distanceLoc >= 0) glUniform1f(distanceLoc, g_mouseController.getDistance());
+        if (noiseModeLoc >= 0) glUniform1i(noiseModeLoc, g_noiseMode);
         if (mouseLoc >= 0) {
             float iMouse[4] = {0.0f, 0.0f, 0.0f, 0.0f};
             g_mouseController.buildIMouse((float)h, iMouse);

@@ -46,6 +46,7 @@ GLuint createProgramFromFiles(const char *vertexSource, const std::string &fragP
     finalFrag += "uniform vec3 iResolution;\n";
     finalFrag += "uniform float iTime;\n";
     finalFrag += "uniform vec4 iMouse;\n";
+    finalFrag += "uniform int iNoiseMode;\n";
     finalFrag += "\n";
     finalFrag += fragSrc;
     finalFrag += "\nvoid main(){ vec2 fragCoord = gl_FragCoord.xy; vec4 col = vec4(0.0); mainImage(col, fragCoord); FragColor = col; }\n";

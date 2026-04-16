@@ -33,6 +33,16 @@ float fbm(vec2 p) {
     return v;
 }
 
+// Debug mode controlled by host UI buttons:
+// 0 = default fbm cloud texture
+// 1 = single-layer valueNoise texture (flatter, less detail)
+// 2 = visualize texture as grayscale (for comparison)
+
+float rectMask(vec2 uv, vec2 mn, vec2 mx) {
+    vec2 inBox = step(mn, uv) * step(uv, mx);
+    return inBox.x * inBox.y;
+}
+
 void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     vec2 uv = fragCoord.xy / iResolution.xy;
     vec2 p = (fragCoord.xy - 0.5 * iResolution.xy) / iResolution.y;
@@ -70,9 +80,21 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
     // Cloud texture inside blob.
     vec2 cloudUv = q * 1.8 + vec2(t * 0.02, -t * 0.01);
-    float c1 = fbm(cloudUv * 2.6);
-    float c2 = fbm(cloudUv * 5.0 + 7.1);
-    float cloudTex = mix(c1, c2, 0.45);
+    float cloudTex;
+    if (iNoiseMode == 1) {
+        // Single octave only: useful to see how much detail fbm contributes.
+        cloudTex = valueNoise(cloudUv * 2.6);
+    } else {
+        float c1 = fbm(cloudUv * 2.6);
+        float c2 = fbm(cloudUv * 5.0 + 7.1);
+        cloudTex = mix(c1, c2, 0.45);
+    }
+
+    if (iNoiseMode == 2) {
+        fragColor = vec4(vec3(cloudTex), 1.0);
+        return;
+    }
+
     float cloudMask = smoothstep(0.46, 0.70, cloudTex);
 
     vec3 cloudCol = vec3(0.82, 0.88, 0.94);
@@ -102,6 +124,46 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
     float vignette = smoothstep(1.25, 0.20, r);
     col *= 0.90 + 0.10 * vignette;
+
+    // Debug buttons (top-left): 0 / 1 / 2 with active highlight.
+    vec2 panel = vec2(0.018, 0.926);
+    vec2 size = vec2(0.070, 0.052);
+    float gap = 0.010;
+
+    vec3 base = vec3(0.10, 0.12, 0.15);
+    vec3 on0 = vec3(0.12, 0.52, 0.20);
+    vec3 on1 = vec3(0.65, 0.47, 0.10);
+    vec3 on2 = vec3(0.56, 0.22, 0.18);
+
+    for (int i = 0; i < 3; ++i) {
+        vec2 mn = panel + vec2(float(i) * (size.x + gap), 0.0);
+        vec2 mx = mn + size;
+        float box = rectMask(uv, mn, mx);
+        if (box > 0.0) {
+            vec3 fill = base;
+            if (iNoiseMode == i) fill = (i == 0) ? on0 : ((i == 1) ? on1 : on2);
+
+            // Inner border and simple glyph bars as lightweight labels.
+            vec2 luv = (uv - mn) / size;
+            float border = step(luv.x, 0.04) + step(0.96, luv.x) + step(luv.y, 0.06) + step(0.94, luv.y);
+            border = min(border, 1.0);
+
+            float g0 = step(0.22, luv.x) * step(luv.x, 0.78) * step(0.25, luv.y) * step(luv.y, 0.75)
+                     - step(0.30, luv.x) * step(luv.x, 0.70) * step(0.35, luv.y) * step(luv.y, 0.65);
+            float g1 = step(0.46, luv.x) * step(luv.x, 0.56) * step(0.24, luv.y) * step(luv.y, 0.76);
+            float g2a = step(0.22, luv.x) * step(luv.x, 0.78) * step(0.62, luv.y) * step(luv.y, 0.74);
+            float g2b = step(0.22, luv.x) * step(luv.x, 0.78) * step(0.26, luv.y) * step(luv.y, 0.38);
+            float g2c = step(0.64, luv.x) * step(luv.x, 0.78) * step(0.38, luv.y) * step(luv.y, 0.62);
+            float g2d = step(0.22, luv.x) * step(luv.x, 0.36) * step(0.38, luv.y) * step(luv.y, 0.50);
+
+            float glyph = (i == 0) ? g0 : ((i == 1) ? g1 : (g2a + g2b + g2c + g2d));
+            vec3 txt = vec3(0.92);
+
+            vec3 buttonCol = mix(fill, vec3(0.03), border * 0.9);
+            buttonCol = mix(buttonCol, txt, clamp(glyph, 0.0, 1.0));
+            col = mix(col, buttonCol, box * 0.95);
+        }
+    }
 
     fragColor = vec4(col, 1.0);
 }
