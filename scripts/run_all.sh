@@ -20,6 +20,7 @@ FILTER="${1:-}"
 
 SCRIPTS=(
     "ray_sphere_learning"
+    "01_bounding_box_2d"
     "02_ray_plane"
     "03_ray_triangle"
     "04_ray_aabb"

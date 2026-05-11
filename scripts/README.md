@@ -2,8 +2,11 @@
 
 This document summarizes the core formulas and principles for each lesson in order.
 
+For the C++ study plan behind these scripts, see [CPP_LEARNING_METHOD.md](CPP_LEARNING_METHOD.md).
+
 ## Contents
 - ray_sphere_learning
+- 01_bounding_box_2d
 - 02_ray_plane
 - 03_ray_triangle
 - 04_ray_aabb
@@ -23,6 +26,27 @@ This document summarizes the core formulas and principles for each lesson in ord
 - 18_mipmap
 - 19_bvh_simple
 - 20_advanced_concepts
+
+---
+
+## 01_bounding_box_2d: 2D Bounding Box Interview Basics
+
+### Core formulas
+- Point containment:
+  $$p_x\in[\min_x,\max_x]\;\land\;p_y\in[\min_y,\max_y]$$
+- AABB overlap as "not separated":
+  $$\neg(a_{\max x}<b_{\min x}\lor a_{\min x}>b_{\max x}\lor a_{\max y}<b_{\min y}\lor a_{\min y}>b_{\max y})$$
+- Union:
+  $$\min=(\min(a_{\min},b_{\min})),\quad \max=(\max(a_{\max},b_{\max}))$$
+- Intersection:
+  $$\min=(\max(a_{\min},b_{\min})),\quad \max=(\min(a_{\max},b_{\max}))$$
+
+### Principles
+- `top-left + size` is convenient for UI and construction.
+- `min + max` is usually better for geometry algorithms and interviews.
+- Normalize negative width/height at construction time.
+- Empty point sets should return no bounding box, often `std::optional<Box2D>`.
+- Ray-vs-box in 2D uses the same slab method as 3D AABB, but only X/Y axes.
 
 ---
 
